@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PiNG</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="titleScreen">
+        <h1>PiNG</h1>
+        <h2>by Maxwell Swartwout and Alex Pasieka</h2>
+        <br>
+        <h2 id="instructions" class="lose">Click on the ball and pull it back like a slingshot to fire.
+            <br>Get the ball in the cup with the least amount of bounces.
+            <br>Shoot the ball to start the game.</h2>
+    </div>
+    <div id="canvasOverlay">
+        <h1 id="title"></h1>
+        <h2 id="score" class="win"></h2>
+        <button id="next" class="hidden">Next Level</button>
+        <button id="replay" class="hidden">Replay</button>
+        <button id="startOver" class="hidden">Start Over</button>
+        <div id="controls">
+            <button id="reset" class="hidden">Reset Level</button>
+        </div>
+    </div>
+    <canvas width="750" height="500"></canvas>
+    <script type="module" src="dist/bundle.js"></script>
+</body>
+</html>
